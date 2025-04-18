@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Function to animate the timeline items when they come into view
+    document.addEventListener("DOMContentLoaded", function() {
+      const timelineItems = document.querySelectorAll('.timeline-item');
+  
+      // Function to check if an element is in the viewport
+      const isInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      };
+  
+      // Add animation class when element comes into view
+      const checkScroll = () => {
+        timelineItems.forEach(item => {
+          if (isInViewport(item)) {
+            item.classList.add('in-view');
+          }
+        });
+      };
+  
+      window.addEventListener('scroll', checkScroll);
+      checkScroll(); // Check on page load
+    });
+  </script>  
+</head>
+<body>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <!-- Your existing portfolio content goes below -->
+      
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">Portfolio</h1>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Hi, I'm Lakshitha Mathiyalagan</h2>
+      <p>Creative Developer | AI Enthusiast | Data-Driven Problem Solver</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </section>
+
+  <section id="about" class="about container">
+    <h2>About Me</h2>
+    <p>
+      I'm an engineering student actively exploring the fields of AI, Machine Learning, and Deep Learning. I enjoy solving real-world problems through AI. I constantly learn cutting-edge technologies like Large Language Models (LLMs), Natural Language Processing (NLP), and Computer Vision to stay ahead in this rapidly evolving field.
+    </p>
+  </section>
+
+  
+  <section id="skills" class="skills-section">
+    <h2>My Skillset</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Machine Learning</div>
+      <div class="skill-card">Deep Learning</div>
+      <div class="skill-card">Data Analysis</div>
+      <div class="skill-card">Natural Language Processing</div>
+      <div class="skill-card">Scikit-learn</div>
+      <div class="skill-card">Pandas</div>
+      <div class="skill-card">NumPy</div>
+      <div class="skill-card">Matplotlib</div>
+      <div class="skill-card">Seaborn</div>
+      <div class="skill-card">Streamlit</div>
+      <div class="skill-card">Git & GitHub</div>
+      <div class="skill-card">HTML / CSS / JS</div>
+      <div class="skill-card">Artificial intelligence</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects container">
+    <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>My personal site showcasing my skills and work. Built using HTML5, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>Stock Analyzer</h3>
+        <p>A powerful AI/ML-driven tool built using Python and Streamlit that analyzes stock data, visualizes trends, and provides smart investment insights.</p>
+      </div>
+      <div class="project-card">
+        <h3>Interactive Dashboard</h3>
+        <p>Built with JavaScript and Chart.js for dynamic data viz.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="journey">
+    <h2>My Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">Sept 2025</div>
+         <div class="timeline-content">
+          <h3>Started Learning Data Science</h3>
+          <p>Dived into the world of data science, focusing on data analysis, visualization, and machine learning.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Jun 2025</div>
+        <div class="timeline-content">
+          <h3>Completed First Engineering Year</h3>
+          <p>Successfully completed my first year of Computer Science Engineering, laying a strong foundation in coding, algorithms, and tech concepts.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Apr 2025</div>
+        <div class="timeline-content">
+          <h3>Launched First Project</h3>
+          <p>Created and launched my first AI-powered Stock Analyzer project, blending machine learning with finance to help users make informed investment decisions.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Mar 2025</div>
+        <div class="timeline-content">
+          <h3>Completed Basics of Python Course</h3>
+          <p>Completed an intensive Python programming course, mastering the fundamentals and advanced concepts.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Jan 2025</div>
+        <div class="timeline-content">
+          <h3>Started Exploring AI</h3>
+          <p>Discovered my passion for artificial intelligence and machine learning, experimenting with various models and applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="contact container">
+    <h2>Contact Me</h2>
+    <p>Email me at <a href="mailto:lakshitha2005che@gmail.com">lakshitha2005che@gmail.com</a></p>
+    <p>Connect with me on <a href="https://www.linkedin.com/in/lakshitha-m22" target="_blank">LinkedIn</a></p>
+    <p>View my projects on <a href="https://github.com/lakshm22" target="_blank">GitHub</a></p>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lakshitha Mathiyalagan. All rights reserved.</p>
+    </div>    
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
