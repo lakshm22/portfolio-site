@@ -26,8 +26,8 @@ This responsive and animated site showcases my journey, projects, and skills as 
 
 ## 📂 Folder Structure
 📁 portfolio/ 
-├── README.md
 ├── LICENSE.md
+├── README.md
 ├── index.html 
 ├── css/ 
  └── style.css 
