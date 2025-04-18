@@ -29,9 +29,5 @@ This responsive and animated site showcases my journey, projects, and skills as 
 ├── LICENSE.md
 ├── README.md
 ├── index.html 
-├── css/ 
- └── style.css 
-├── js/ 
- └── script.js 
-└── assets/ 
- └── images, icons, fonts
+├── style.css
+└── script.js
