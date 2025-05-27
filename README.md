@@ -39,3 +39,7 @@ This responsive and animated site showcases my journey, projects, and skills as 
 ├── index.html 
 ├── script.js
 └── style.css
+
+---
+
+*"Made with 🤍 by Laksh"*
