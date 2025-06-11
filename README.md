@@ -32,7 +32,7 @@ This responsive and animated site showcases my journey, projects, and skills as 
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Structure
 📁 portfolio/ 
 ├── LICENSE.md
 ├── README.md
