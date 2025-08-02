@@ -30,13 +30,4 @@ This responsive and animated site showcases my journey, projects, and skills as 
 - About Me and Contact sections
 - GitHub integration
 
----
-
-## 📂 Project Structure
-📁 portfolio-site/ 
-├── LICENSE.md
-├── README.md
-├── index.html 
-├── script.js
-└── style.css
 
